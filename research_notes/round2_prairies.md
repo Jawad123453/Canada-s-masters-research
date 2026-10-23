@@ -148,3 +148,24 @@ Sources (opened in full; calendar pages are JS-rendered, read with --browser):
 - MISSM (search snippet, not opened): "normally a four-year bachelor's in computing science, IT or MIS"; 3.0 last 60 credits → FAIL F1 regardless.
 - Cost not computed (program fails F1). Alberta health insurance not checked (moot).
 
+## 5. Extras
+- Lebanon row that Regina points to: Regina's eligibility page sends international applicants to Guelph's credential list (https://graduatestudies.uoguelph.ca/future/international/credential, opened in full, HTTP 200). Lebanon row: "Master's Minimum Admission Requirement — Bachelor`s, Licence requiring 4 years of study"; "Effective 2025-10-01". It sets **no grade threshold** (only the degree equivalence), so nothing stricter than Regina's WES 2.67 rule. Applicant's 5-yr IUL BME qualifies as a 4-year-equivalent degree.
+- Regina qualifying / probationary year (calendar p.6): Qualifying "will not be used for a student with a poor academic record"; Probationary = "academic qualifications are difficult to assess, or are marginal for admission" and "Probationary courses may be credited toward the degree program" (no extra cost if credited). Applicant already clears 2.67, so a separate pre-master's year is not needed. ESE may still impose qualifying courses (design, law/ethics, economics), and those do NOT count toward the degree.
+- Saint-Boniface: no pre-master's / qualifying year relevant.
+- Olds College, Saskatchewan Polytechnic (both "Grad Program Yes" on the DLI list): discovery searches on oldscollege.ca and saskpolytech.ca found no master's programmes (search results only, pages not opened). Not pursued.
+- Saskatoon theological colleges (Emmanuel & St Chad, Horizon, Lutheran Theological Seminary, St Andrew's) are "Grad Program Yes" but faith/theology degrees; not researched.
+
+## Blocked hosts this round
+- None hard-blocked. ustboniface.ca old URLs → HTTP 404 (site restructured; new /programmes/... URLs work). uregina.ca/ur-international/current-students/health-insurance.html → HTTP 404 (used /ur-international/student-services/health-card.html instead). uregina.ca/academics/programs/kinesiology-health-studies/master-kinesiology.html → 404 (correct URL /academics/programs/khs/masters-kinesiology.html). concordia.ab.ca calendar content only renders in headless Chromium.
+
+## Summary verdicts (round 2, 23 Oct 2026)
+| Program | F1 bar | F2 IELTS 7.0 | F3 cost | F4 supervisor | F5 delivery | F6 BME | Overall |
+|---|---|---|---|---|---|---|---|
+| Regina M.Eng. ESE (project, 30 ch) | PASS thin (WES 2.68 vs 2.67) | PASS (Academic) | PASS $25,620 (4 terms) – $27,387 (5 terms) 2026-27; proj. $26.7k–$28.5k | PASS (assigned; "do not need to contact professors") | PASS | PASS (qualifying-course risk) | **SURVIVOR (best stream)** |
+| Regina M.Eng. SSE (project, 30 ch) | PASS thin | PASS | same | PASS (assigned, calendar) | PASS | PASS (software background may trigger qualifying) | SURVIVOR |
+| Regina M.Eng. ISE/ENEV/Process/Petroleum/Energy | PASS thin | PASS | same | UNCONFIRMED ("recommended" to find supervisor) | PASS | PASS | Provisional |
+| Regina MKin (course + practicum, 30 ch) | PASS thin (70%, WES) | PASS | PASS ≈$20.4k–$22.2k (2026-27) | PASS* (must secure 2nd practicum site) | PASS | UNCONFIRMED ("health sciences" degree + anatomy/physiology) | **Provisional — ask KHS** |
+| Regina M.Ed. course routes | PASS thin | PASS | PASS ≈$20-22k | PASS (course) | mixed (TLL cohort online) | FAIL-leaning (B.Ed. normally; experience preferred) | Likely FAIL |
+| Regina MA Social Studies (course) | PASS thin | PASS | PASS ≈$20-22k | PASS (advisor assigned) | PASS | FAIL-leaning (social-science background) | Likely FAIL |
+| USB M.Ed. / MA ÉCI | FAIL (3.00 last 60 cr, via UManitoba) | n/a (French) | cheap ($4,095/yr) | – | FAIL (part-time, fully remote possible / online) | FAIL (M.Ed. 2 yrs teaching) | FAIL |
+| CUE MSc IT / MISSM / MISAM / MEd | FAIL (AGPA 3.0 last 60 cr incl. fails) | PASS (6.0/6.0 Academic) | not computed | – | – | MSc IT ok | FAIL |
