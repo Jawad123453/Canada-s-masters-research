@@ -135,3 +135,16 @@ Host note: old URLs (ustboniface.ca/en/graduate, /faq-maitrise-en-education, /et
 - "Mode d'enseignement En ligne"; "Ce programme de maitrise à temps partiel peut être complété entièrement à distance." F1: "note cumulative de 3,00 (B) pour les 60 crédits ... les plus récents." Same fee table (4 095 $/yr intl).
 ### Pre-master's / qualifying at USB: none applicable (only part-time "Diplôme postbaccalauréat en éducation", hybrid). Not pursued.
 
+## 4. Concordia University of Edmonton (CUE) — all master's FAIL F1
+
+Sources (opened in full; calendar pages are JS-rendered, read with --browser):
+- 13.1 Graduate Regulations 2026/2027: https://concordia.ab.ca/student-services/registrar/academic-calendar/2026-2027/13-0-graduate-admission-programs/13-1-graduate-regulations/
+- 13.3.5 MSc Information Technology 2026/2027: https://concordia.ab.ca/student-services/registrar/academic-calendar/2026-2027/13-0-graduate-admission-programs/13-3-graduate-degree-programs/13-3-5-master-of-science-in-information-technology/
+- 13.3 list: MEd Educational Leadership (13.3.2), MISAM (13.3.3), MISSM (13.3.4), MSc IT (13.3.5), PsyD (13.3.1).
+
+- F1 (applies to all CUE graduate programs), 13.1.1.A: "An admission grade point average (AGPA) of 3.0 (on Concordia University of Edmonton's 4-point scale) or equivalent on the most recent attempted 60 credits"; "calculated using the most recently attempted credits, including failing marks". Applicant: WES last-2-years ~2.90, and with failed attempts counted lower → **FAIL**. Probationary route only for records "difficult to assess, as may be the case of students from foreign universities" or "below AGPA ... but with substantial work experience" — discretionary, not a published bar → does not rescue.
+- F2 (for record): "IELTS ... Academic. The minimum satisfactory overall score is 6.0, with no individual band below 6.0." (Academic only.)
+- MSc IT (would otherwise fit F6): "Students should have a background in one of the following areas: Mathematics, Sciences, or Engineering"; "33-credit, 16-month program with a single intake for Fall term"; includes "IT 581 (IT Project)" and "IT 550 (IT Internship)".
+- MISSM (search snippet, not opened): "normally a four-year bachelor's in computing science, IT or MIS"; 3.0 last 60 credits → FAIL F1 regardless.
+- Cost not computed (program fails F1). Alberta health insurance not checked (moot).
+
