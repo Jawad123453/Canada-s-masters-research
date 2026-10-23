@@ -3,7 +3,7 @@
 Verification agent. Each decisive source re-fetched with scratchpad/tools/fetch.sh (curl; --browser / curl --compressed where needed) and the quote grepped in the fetched text. Status: CONFIRMED / CORRECTED / NOT FOUND.
 
 ## Blocked hosts / fetch errors
-(filled as encountered)
+None. www.viu.ca and programs.viu.ca returned gzip bytes to plain curl (fixed with curl --compressed); not a block.
 
 ## Plan
 A. VIU MEDL (program page, international admissions, general regulations, Schedule #022, tuition-fee-schedule, medical insurance, gov.bc.ca ISHF).
@@ -115,3 +115,51 @@ Fetched 23 Oct 2026 with curl --compressed (all HTTP 200); handbook PDF via fetc
 - Sensitivity (new): if the 847 UPEI+UPEISU fees are per Fall/Winter term rather than per year, add 847 x 2 per year = +1,694 -> 30,840 (FAIL even at 2026-27 rates); if charged in all 3 terms, 32,534. Period must be asked.
 - Fall 2027 projection at 6.5%/7.5% repeated: 13,403.70 (2027-28, 5 courses) + 14,327.20 (2028-29) + 4,066 = 31,796.90 -> CONFIRMED arithmetic; FAIL on projection.
 Verdict unchanged: F2/F4/F5/F6 PASS; F1 UNCONFIRMED; F3 PASS only at 2026-27 rates and only if fees are annual; projected FAIL for Fall 2027.
+
+## C. University of Guelph, Master of Capacity Development & Extension (MSc CDE, coursework option)
+
+Fetched 23 Oct 2026 with curl --compressed (all HTTP 200; graduatestudies.uoguelph.ca reachable).
+- COST https://graduatestudies.uoguelph.ca/future/cost
+- REG https://www.uoguelph.ca/registrar/finances-fees/tuition-fees/guelph-grad
+- CAL https://calendar.uoguelph.ca/graduate-calendar/graduate-programs/capacity-development-extension/
+- PROG https://www.uoguelph.ca/programs/master-capacity-development-extension/
+- ICG https://graduatestudies.uoguelph.ca/future/international/credential
+- REQ https://graduatestudies.uoguelph.ca/future/apply/requirements
+- ENG https://graduatestudies.uoguelph.ca/future/international/english
+
+| Item | Status | Source | Verbatim (grep-matched) |
+|---|---|---|---|
+| Annual = 3 semesters | CONFIRMED | COST "Graduate Tuition" | "Annual tuition includes tuition for three consecutive semesters: Fall, Winter, and Summer." |
+| CDE row | CONFIRMED, NO asterisk | COST | "Master of Capacity Development and Extension" "$7,133" "$21,946" "$24,141" (domestic 2026-27 / intl 2026-27 / intl 2027-28). "**Program is billed per credit. The listed fee reflects cost of total required credits for program" applies only to ** rows (MBA, MA Leadership, MA Mental Health, MCJ, cyber x2, MEM, MPAcc, MRE, MSCM). -> 24,141 is ANNUAL |
+| Registrar tuition | CONFIRMED (CDE not listed) | REG "Fall 2026, Winter 2027 & Summer 2027" | "Regular Masters (MA, MSC, MASC, GDIP - unless listed separately below)" "$2,377.53" "$6,837.54" per semester. PROG: "Degree MSc (Master of Science)" -> REG would give 3 x 6,837.54 = 20,512.62 vs COST 21,946 (discrepancy stands; COST "Other Master of Science programs" = "$20,512") |
+| Compulsory fees | CONFIRMED | REG, full-time | "Total Compulsory Fees" "$937.21" "$642.80" "$635.55" (Fall/Winter/Summer) = 2,215.56/yr |
+| UHIP | CONFIRMED | REG | "(UHIP, international students only, charged annually in the fall semester)" "$948.00" |
+| Length | CONFIRMED (conflict) | CAL vs PROG | CAL: "a full-time course-based, professional development option, which requires three to four semesters of study." PROG: "Duration Full Time: 24 months" |
+| Coursework | CONFIRMED | CAL | "Students must complete 4.50 credits according to the following: five (5) core courses, a minimum of four (4) electives". New: required CDE*6030 is "Summer Only" and is completed via "an internship or a group field tour project" -> a F-W-S 3-semester path is structurally possible (inference) |
+| Lebanon row | CONFIRMED, NO grade threshold | ICG "Lebanon" | "Master's Minimum Admission Requirement" / "Bachelor`s, Licence requiring 4 years of study" / "Typical Degree Credits: Not available" / link "Lebanon's most common grading system" (Scholaro) / "Effective 2025-10-01". No country row on ICG has a % or /20 figure (grep "%" and "/20": zero hits). |
+| General bar | CONFIRMED | REQ "Master's Admission" | "70% (B-) average is required in the last two years of full-time equivalent study." |
+| US scale | CONFIRMED | REQ "Grade Conversion" | "Guelph's minimum grade requirement equivalent of 70% (B -) which is 3.0 on the US 4.0 scale." Also: "Scholaro may be used for country specific grading scales." |
+| International years | CONFIRMED | REQ | "Typically, the last 4 full-time semesters (or 6 full-time semesters for full-year education systems) equivalent credits." ; "moving backward per credit until the equivalent of the last two years of full-time study is achieved." |
+| WES | CONFIRMED | REQ | "Transcript evaluation services are not accepted for credentials assessments. However, World Education Services (WES) evaluation reports are accepted as certified copies of official transcripts." |
+| Repeat rule | CONFIRMED absent | REQ, PROG, CAL CDE section | no "repeat/failed" wording |
+| Program bar | CONFIRMED | PROG | "Admission Average B- (70% - 72%)"; "at least second class honours (B-) in the last four semesters of full-time study or two years of professional work in a related field." CAL: "A four-year honours undergraduate degree with a least B- in the last two years of undergraduate study" |
+| Degree fit | CONFIRMED | CAL | "open to qualified graduates from a wide variety of disciplines including ... health" |
+| Supervisor | CONFIRMED | PROG "How to Apply" | "you are not required to secure a faculty advisor to supervise your program." |
+| Delivery | CONFIRMED | PROG | "Delivery On-campus"; CDE*6030 "Not offered through Distance Education" |
+| Deadline | CONFIRMED (conflict remains) | PROG | header "International : Fall (September): April 15", "Winter (January): October 25, 2026", "Summer (May): January 31"; lower: "Applications are ongoing for international students" and "Note: Only Fall semester entry is available for this program." |
+| IELTS | CONFIRMED | ENG | "International English Language Testing System (Academic) (IELTS)" / "Computer-delivered IELTS" "6.5" (column "Minimum Overall Score"; no IELTS sub-band) |
+| Contacts | CONFIRMED | PROG | Lorena Barker "cde@uoguelph.ca"; Leigh West "lewest@uoguelph.ca" |
+
+### Scholaro (third-party tool that Guelph's own REQ and ICG point to; NOT Guelph's own conversion)
+https://www.scholaro.com/db/Countries/Lebanon/Grading-System (HTTP 200): "Most Common 100-Point": "70.000 - 79.000" "good (bien)" US "B+"; "University Level": "70.000 - 79.990" "Good" US "B"; "60.000 - 69.990" "Acceptable" US "C". If Guelph applies this, 70.51% overall and ~73% last-two-years both map to US B (3.0) = meets "3.0 on the US 4.0 scale"; the ~66-67% all-attempts figure maps to US C (University Level) and fails. This shifts Guelph F1 from "FAIL-leaning" to "UNCONFIRMED, leaning PASS if retakes replace failures" - still needs the program's confirmation.
+
+### Recomputed cost (Fall 2027 entry; 2027-28 intl tuition; fees/UHIP at 2026-27 rates)
+- Per semester tuition 24,141 / 3 = 8,047.00; compulsory 937.21 + 642.80 + 635.55 = 2,215.56; UHIP 948
+- 3 semesters (F27/W28/S28): 24,141 + 2,215.56 + 948 = 27,304.56 -> CONFIRMED (< 30k, fee-increase risk)
+- 4 semesters (+F28): 27,304.56 + 8,047 + 937.21 + 948 = 37,236.77 -> CONFIRMED (FAIL; floor, uses 2027-28 rate)
+- 24 months / 6 semesters: 2 x 27,304.56 = 54,609.12 (FAIL)
+- Cross-check 2026-27 (cost page) 21,946 + 2,215.56 + 948 = 25,109.56; Registrar regular-MSc rate 23,676.18. 2027-28 increase on cost page +10.0%.
+Verdict: F2/F4/F5/F6 PASS; F3 PASS only if finished in 3 semesters (else FAIL); F1 UNCONFIRMED (no Lebanon threshold; Scholaro mapping favourable for 70-73%).
+
+## Blocked hosts (final)
+None. Only fetch issue: www.viu.ca (tuition-fee-schedule, general-regulations) and programs.viu.ca return gzip-compressed bodies to plain curl; fixed with `curl --compressed`.
