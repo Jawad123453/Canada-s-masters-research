@@ -4,7 +4,8 @@ Agent started 23 Oct 2026. Scope: public DLIs with Grad Program = Yes not checke
 Filters per 00_agent_brief.md. Cost-first screen; drop on first clear failure with one quoted reason.
 
 ## Blocked hosts
-(none yet)
+- www.nscc.ca/programs-and-courses/programs/index.asp: HTTP 403 ("Access to www.nscc.ca was denied ... HTTP ERROR 403") to curl and headless Chromium; other nscc.ca pages loaded (not material).
+- www.bcit.ca: plain curl gets a bot challenge ("We need to confirm you are not a robot"); headless Chromium works (not blocking).
 
 ## Plan
 1. Polytechnics/colleges: BCIT, Olds, Sask Polytech, Seneca, Sheridan, NSCC, Michener
@@ -73,3 +74,36 @@ Filters per 00_agent_brief.md. Cost-first screen; drop on first clear failure wi
 - Fees PDF https://emmanuelstchad.ca/wp-content/uploads/2026/09/Fees_v3_31aug2026-1.pdf (dated 31 Aug 2026): MTS "Full Course (per 3 credit course) $ 1,400.00" (no international differential shown); "Students outside Canada (Study permit) $ 200.00" application; "Program Fee (per term ... max of $100/academic year)"; "Student Union (TSS) per academic year $ 50.00"; "Academic Equivalency Assessment ... $ 250.00"; "Graduation $ 150.00".
   - Cost arithmetic: 20 x 1,400 = 28,000 + program fee 2 x 100 = 200 + TSS 2 x 50 = 100 + equivalency 250 + graduation 150 = $28,700 (+ application 200 = $28,900). Health insurance: none charged by ESC; Saskatchewan provincial coverage for study-permit holders not verified (UNCONFIRMED). Fee-increase risk (>= 27k).
 - Delivery: ESC's own Fall 2026 timetable https://emmanuelstchad.ca/wp-content/uploads/2026/09/ESC-Course-Timetable-Fall-2026_v3_18sep2026.pdf : all three degree courses "Format: Online (Zoom)". Academic Policies PDF https://emmanuelstchad.ca/wp-content/uploads/2026/10/Policies_v2.pdf says "No more than half the total credits for any degree ... may be earned through a combination of on-line or cluster courses" – contradicts the actual timetable; combined with STU's all-online offerings, an in-person MTS for a study-permit student is not available. F5 FAIL (and IELTS policy not published: UNCONFIRMED). DROP. Contact: registrar@emmanuelstchad.ca (from Policies PDF).
+
+### Lutheran Theological Seminary (Saskatoon) – MTS/MDiv via STU – FAIL F5
+- https://lutherantheological.ca/admissions/international-students : "International students pay tuition at the same rates as Canadian students"; "a test of English proficiency is often required" (no score). Courses are the STU timetable above: "Synchronous Online". DROP on delivery. (Scholarship requires Lutheran church membership per search snippet; not opened.)
+
+### St. Andrew's College (Saskatoon) – MTS/MDiv via STU – FAIL F5
+- https://standrews.ca/academics/programs/master-of-divinity-and-master-of-theological-studies/ : admission "an undergraduate degree from a recognized university or its educational equivalent" (no %); "Most courses ... are offered as intensives ... most are also available in a blended delivery format"; denominations "also welcome". But the 2026-27 STU timetable lists the courses as "Synchronous Online". DROP on delivery (in-person share UNCONFIRMED/at best minimal).
+
+### Horizon College & Seminary (Saskatoon) – MA Biblical & Theological Studies – PARTIAL SURVIVOR (cost/bar/IELTS/F4 pass) but F6 religious-conversion requirement + international intake paused 2026/27
+- DLI: row "Horizon College and Seminary Inc. | O214426376877 | Saskatoon | ... | Yes | Public institution" in 01_dli_extract.md (Grad Program Yes list, PGWP Yes).
+- Programs: https://www.horizon.edu/seminary/programs/ : MA Biblical & Theological Studies, MA Clinical Pastoral Counselling, MA Ministry Leadership, MA Pastoral Psychotherapy, Master of Divinity (75 cr).
+- International page https://www.horizon.edu/admissions/international-students/ :
+  - "we are pausing international admissions for the 2026/2027 academic year. Please revisit our website in Fall 2026 for the possibility of applying for the 2027/2028 year." (page stamp 2025-11-13) -> Fall 2027 status UNCONFIRMED.
+  - "the Master of Arts in Clinical Pastoral Counselling program are not available to international students"; MA Pastoral Psychotherapy page: "not available for international applicants".
+  - F1: "undergraduate degree (with a cumulative grade point average [GPA] of 2.5 or higher)" -> applicant WES 2.68 PASS. Evaluation: "IQAS ... WES" recommended (accepts WES). No Lebanon row. Full degree cumulative counts.
+  - F2: "IELTS (Academic) ... Overall Band Score: 6.5 ... Reading: 6 ... Writing: 6" -> PASS (Academic only listed).
+  - Cost basis: "International students ... are charged the same tuition/fees as Canadian students"; "Payment for the first full year of tuition and fees is due before a formal acceptance letter".
+  - F6 FLAG: seminary applicants "Must testify to a definite experience of Christian conversion"; "Pastoral Reference"; Code of Conduct; "reserves the right to deny admission of any individual who refuses to embrace the doctrines and practices". No degree-field restriction (any undergraduate degree).
+- Fees: https://www.horizon.edu/wp-content/uploads/2026/04/2026-2027-Horizon-Seminary-Tuition-and-Fees.pdf ("Seminary Tuition and Fees 2026-2027"): "Tuition $1,038.00 per course"; "Course Fee $100.00 per course"; "Populi Fee ... $54.00 per semester"; "Graduation Fee – M.A. $175.00"; application "$250.00 (International)".
+- MABT structure: https://www.horizon.edu/wp-content/uploads/2026/08/MABT-Program-Sheet-26-27-1.pdf : "Total Credits Required 48"; area of focus = "Advanced Reading Course (3 credit hours) OR Capstone Project (3 or 6 credit hours) OR Thesis (9 credit hours)" + "Open Electives in Any Area" -> course-based route exists (F4 PASS).
+- Cost arithmetic (2026-27 fees): 16 courses x (1,038 + 100) = 18,208; Populi 54 x 6 semesters = 324; graduation 175 -> $18,707 (+ $250 application = $18,957). Health insurance: none listed by Horizon; UNCONFIRMED (Saskatchewan provincial coverage for study-permit holders not verified). PASS F3 with large margin.
+- F5 delivery: program page https://www.horizon.edu/program/ma-biblical-theological-studies/ : "can be completed fully synchronously or fully asynchronously through ... onsite, livestream, video on demand (VOD), online video, and directed study." 2026-27 schedule https://www.horizon.edu/wp-content/uploads/2026/07/Seminary-Course-Schedule-26-27-by-Course-Code.pdf (rendered icons viewed): "Students On-Campus Saskatoon" icon on BI5101, TS5201, NT5201, NT5307, NT5318, NT5319, OT5300, OT5301, TS5105, PS6209/TS6209, TS6205, LS/CP modules (mostly 1-week Mon-Fri 9-4 modules or weekly evening classes); semester-long TS5106, TS5107, PS5103, TS6207, NT5124, BI6200 are Directed Study; TS5101 Winter is Online Video. A mostly in-person MABT looks feasible, but whether it meets IRCC's in-person/full-time rules with a module format is UNCONFIRMED -> ask.
+- Deadlines: none published for seminary/international (UNCONFIRMED). Contact: info@horizon.edu.
+
+### Victoria College / Emmanuel College (Victoria University, U of T; TST conjoint degrees) – FAIL cost
+- https://emmanuel.utoronto.ca/future-students/fees-and-support ("Tuition and Fees (2026–2027)", International Students): "Tuition $3,168 per Emmanuel course"; "International students must register full-time (four or five courses per semester)"; incidental "$1,342.50 per semester"; UHIP "$948 per semester"; "UHIP is mandatory for all international students."
+- Even one 8-course year = 8 x 3,168 + 2 x (1,342.50 + 948) = $29,925; a 2-year MTS/MDiv is roughly double (>$55k). FAIL. (Victoria College itself grants no separate master's; its graduate theology degrees run through Emmanuel/TST.)
+
+### Alberta University of the Arts – MFA in Craft Media – FAIL F1/F6
+- https://auarts.ca/future-students/how-to-apply/how-to-apply-for-a-masters-degree/mfa-admission-requirements : "A Bachelor's degree in Fine Arts or related discipline or equivalent, with a minimum cumulative GPA of 3.00"; "Portfolio, cover letter, statement of intent, CV". DROP.
+
+## Summary (23 Oct 2026)
+- Only partial survivor: Horizon College & Seminary MA Biblical & Theological Studies (~$18.7k total, GPA 2.5, IELTS 6.5, course-based option, on-campus Saskatoon modules). Blockers: F6 Christian-conversion/pastoral-reference requirement; international admissions paused for 2026/27 with 2027/28 not yet announced; deadlines and health-insurance arrangement unpublished; whether a module-based on-campus load meets IRCC in-person/full-time rules UNCONFIRMED.
+- Everything else dropped: BCIT (cost), Olds (no master's), Sask Polytech (online NP only), Seneca (cost; MPST pending, no fees), Sheridan (F6 field + portfolio), NSCC (no master's), Michener (cost + 75%), Grebel MPACS / St Paul's MDP (UW fees), St Jerome's MCT (online thesis, 75%), AST (MA B+; MDiv cost), ESC / LTS / St Andrew's (STU courses synchronous online), Emmanuel College Toronto (cost), AUArts (GPA 3.0 + portfolio).
