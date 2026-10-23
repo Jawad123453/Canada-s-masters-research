@@ -3,7 +3,9 @@
 Agent notes. Evidence rules per 00_agent_brief.md. Pages fetched with scratchpad/tools/fetch.sh (curl, or headless Chromium with --browser).
 
 ## Blocked hosts / fetch errors
-(none yet)
+- www.bcit.ca/files/... PDFs (e.g. https://www.bcit.ca/files/pdf/admission/international_tuitionfeeschedule_2026-27.pdf): HTTP 200 but body is a bot-challenge page "We need to confirm you are not a robot." (Support ID 8244517783133414835), with curl. Worked around: BCIT's own tuition-estimator API https://www.bcit.ca/wp-json/bcit/costs/v1/r/intl/<code>/burnaby/ read via headless Chromium ("Estimates are based on the 2026-27 academic year rates").
+- www.viu.ca/registration/general-regulations: fetch.sh (curl without --compressed) returned raw gzip bytes; re-fetched with curl --compressed - not a block.
+- No other blocks. canada.ca pages all rendered with --browser.
 
 ## Plan
 1. VIU MEDL: program page, programs.viu.ca courses/requirements, international admissions + English, general regulations (grade scale), Schedule #022 PDF, medical insurance, gov.bc.ca MSP fee.
@@ -117,3 +119,15 @@ Sources opened in full: P4 (PDF): "Master of Education in Educational Leadership
 | Université Sainte-Anne | O19391556726 | Church Point |
 | Université de Hearst | O19395677925 | Hearst, Kapuskasing, Timmins |
 | Yukon University | O19604209351 | Whitehorse (Ayamdigut) + 11 community campuses |
+
+## 6. Western public institutions (BC/AB/North) scan
+Source: dli-full-list.json (Chromium, 23 Oct 2026), public institutions in BC/AB/YT/NT/NU with their Grad Program flag.
+- Grad Program "No" (= no PAL-exempt master's): Kwantlen Polytechnic (O19350676872), Capilano (O19280078102), Okanagan College (O19395299488), Coast Mountain College (O110095977911), Mount Royal (O18761482032), MacEwan (O19092022262), Camosun, Douglas, Langara, Selkirk, North Island, Northern Lights, CNC, College of the Rockies, JIBC, VCC, NAIT, SAIT, Bow Valley, NorQuest, Red Deer Poly, Lethbridge Poly, NW Poly, Medicine Hat, Keyano, Lakeland, Portage, Northern Lakes, Burman, King's, St. Mary's, Aurora College. Nicola Valley IIT: no row on the DLI list at all.
+- Grad Program "Yes" and not already eliminated: BCIT, Olds College, Alberta University of the Arts (+ CUE, covered by another agent).
+  - **BCIT** (O19330128542). International master's in the estimator API (2026-27 rates): Building Science MEng m120meng 3 terms x 19,201.87 = **57,605.61**; Smart Grid MEng m500meng **46,992.96** (4 terms); Applied Computing MSc m600msc **48,944.98**; Ecological Restoration MSc m410msc **54,438.16**; Building Engineering MASc m220masc **58,039.32**. All FAIL F3 (cost). Note for the record: Building Science MEng page https://www.bcit.ca/programs/building-science-master-of-engineering-full-time-part-time-m120meng/ has a good bar ("A 4-year bachelor's degree in an engineering field or architecture with a GPA of 2.8 out of 4.0 (70%)"; "last two years"; ICES evaluation required) and a course route ("Path 1: course option ... 10 courses") - but costs 57.6k.
+  - **Olds College** (O18713227822): 2026-27 program dates & fees PDF https://www.oldscollege.ca/_media/admissions/2026-27-program-dates-fees.pdf and programs page list no master's (only "Master Spinner/Weaver Certificate", continuing ed). N/A.
+  - **AUArts** (O18760756062): MFA only; https://www.auarts.ca/future-students/how-to-apply/how-to-apply-for-a-masters-degree : admission "based on academic achievement, the strength of your portfolio, and alignment between your research goals". FAIL F6 (art portfolio) / F4 (research alignment).
+- Qualifying / pre-master's year: none found at any western institution scanned (VIU MEDL only mentions "Take one or more qualifying courses" under Flexible Admission, for applicants with "significant professional experience").
+- Result: no new western candidate under CAD 30k.
+
+## Status: COMPLETE (23 Oct 2026)
