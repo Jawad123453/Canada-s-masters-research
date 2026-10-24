@@ -4,7 +4,14 @@ Date: 24 Oct 2026. Method: official university and provincial pages fetched with
 Privacy: official rules, quotes, URLs and amounts only.
 
 ## Blocked hosts / fetch errors
-(filled in below)
+- No host fully blocked. Specific failures:
+  - unbgsa.ca/health-and-dental-plans/ and unbgsa.ca/universal-bus-pass/: HTTP 404 (curl and headless Chromium). Fee-sheet link http://www.unbgsa.ca/?section_id=16 loads only the GSA home page.
+  - studentvip.ca/unbgsa: HTTP 200 but a Blazor app; headless Chromium (120 s) returned an empty DOM -> UNB GSA plan opt-out criteria UNCONFIRMED.
+  - www2.gnb.ca/.../finance/promo/tuition_rebate.html: HTTP 404 (repeal confirmed instead on laws.gnb.ca).
+  - www.brandonu.ca/registration/files/Graduate-International-Tuition-Table-2026-27.pdf: HTTP 404 (not posted).
+  - busu.ca/upass: HTTP 404.
+  - unb.ca/gradstudies/funding/index.html and .../gge/graduate/funding.html: HTTP 404 (wrong guesses; real pages found).
+  - UNB awards list (calendar/graduate/current/awards/index.php) is JS-paged; all 195 award detail pages read via details/?id=1..400.
 
 ## Plan
 1. Awards/scholarships/assistantships/jobs per university (incl. GGE, CDE/OAC, Rural Development).
@@ -99,3 +106,45 @@ All pages below fetched 24 Oct 2026 with curl --compressed (HTTP 200).
 ### B6. Ontario provincial programs
 - No Ontario tuition-refund-for-staying program found. Ontario provincial tuition credit discontinued: 2024 Fall Economic Statement tax provisions https://budget.ontario.ca/2024/fallstatement/provisions.html : "Tuition and education tax credits were discontinued in September 2017. Tax filers who were resident in Ontario on December 31, 2017, may be able to claim unused tuition and education tax credits carried forward from previous years." -> NO provincial tuition benefit for a 2027 entrant.
 - Program page note (not a cost saving): "International students that graduate from this program qualify for additional points towards their Ontario Immigrant Nominee Program application."
+
+## C. Brandon University — MA (Rural Development), course-based option
+Baseline (round3_unbc_laurier_misc.md): 2025-26 table, 15 cr/regular session = 9,124.68; 30 cr over two regular sessions = 18,249.36.
+
+### C1. Fee table status and what a table row means
+- 2026-27 international graduate table: https://www.brandonu.ca/registration/files/Graduate-International-Tuition-Table-2026-27.pdf -> HTTP 404 (re-checked 24 Oct 2026; also ...-2026-2027.pdf 404). Tuition page https://www.brandonu.ca/future-students/tuition/ still links only "Graduate-International-Tuition-Table-2025-26.pdf". -> NOT POSTED.
+- Graduate Studies tuition page https://www.brandonu.ca/graduate-studies/tuition-fees-2/ : "The tuition fees listed at the following site apply to a total of 15 credit hours over the regular session and include all student fees."; "Tuition fees for regular session Fall/Winter classes may be paid in two parts; each due the first day of each term. Student fees are all due at the start of the regular session." -> a table row = a whole Sept-April year.
+- 2025-26 table https://www.brandonu.ca/registration/files/Graduate-International-Tuition-Table-2025-26.pdf, Rural Development ON CAMPUS 15 cr: tuition 6,823.50; per-credit fees (Tech 113.25, Student Services 69.00, Renew BU 178.50, Copyright 13.50, Building 75.45, BUSU 78.00 = 527.70 = 35.18/cr); flat annual fees (Registration 17.70, ID 28.00, Fitness 95.80 "max $95.80/year", Health Insurance 1,200.00, CFS 9.38, Quill 7.60, WUSC 15.00, BUSU "H&D" 350.00, "U-Pass" 50.00 = 1,773.48); Total 9,124.68.
+
+### C2. Program length (normal completion / two-term option)
+- Calendar 2026-27 https://www.brandonu.ca/calendar/files/2026/02/Graduate-Calendar-2026-27.pdf 8.3.1: "consists of 30 credit hours either by taking 10 courses or six courses and a thesis"; 8.3: "Students must complete all program requirements within six (6) years of first registration"; 3.4.2: "Any Master's student registered in nine or more credit hours per academic year shall be considered a full-time student" (Sept 1-Aug 31). No normal completion time and no statement that 30 cr can be done in two terms -> UNCONFIRMED; depends on how many 88:5xx courses run each term (ask ramsey@brandonu.ca). The "15 credit hours over the regular session" fee basis implies a standard pace of ~2 years.
+- Saving if all 30 cr were done in ONE regular session (hypothetical; 2025-26 rates): 30 x (454.90 + 35.18) + 1,773.48 = 16,475.88 vs 18,249.36 -> saves ~1,773 in fees (one year of MISHP 1,200 + BUSU H&D 350 + other flat fees) plus ~8 months of living costs. Doing it in 3 terms (F/W + Spring/Summer) may also avoid a second regular-session flat-fee year — UNCONFIRMED (spring/summer fee table not checked; spring course offerings unknown).
+
+### C3. Awards / funding
+- Graduate international financial aid https://www.brandonu.ca/graduate-studies/international-applicants/financial-aid/ : "Students studying in Canada on a student authorization are not eligible for any student loans or scholarships offered by the government or by Brandon University."; "Students may become eligible in senior years for scholarships that are awarded on the basis of outstanding performance in their university studies." (page partly outdated: it still describes an "off-campus work permit").
+- Graduate Scholarships https://www.brandonu.ca/scholarships/graduate-students/graduate-scholarships/ : "Minimum entrance (entering students) or cumulative (continuing students) GPA of 3.00;" "(Recipients typically have GPAs closer to 4.00.)" -> NO realistic chance at ~2.7.
+- Graduate Bursaries https://www.brandonu.ca/scholarships/graduate-students/graduate-bursaries/ and Scholarship-Bursaries .../graduate-scholarship-bursaries/ : "Be a Canadian citizen or permanent resident;" -> NO for international.
+- Rural Development awards https://www.brandonu.ca/rural-development/scholarships-awards/ : Henry F. Wiebe Graduate Award "granted to a full-time student enrolled in any year of the Master or Graduate Diploma in Rural Development"; "based on community involvement and a desire to pursue a career in rural community development"; "Application forms must be submitted to the Senate Awards Office"; "up to a maximum of $3,000 per award" -> citizenship not restricted on this page; UNCLEAR given the international-aid statement above. Agrium Inc. Bursary "1 award @ $1,800" (full-time MRD) and CIBC Bursaries "2 awards @ $1,000 each" (financial need) -> bursaries = citizen/PR only per general rule -> likely NO. Provincial Exhibition scholarship "Manitoba resident" -> NO; Shur-Gro "rural Manitoba student" -> NO.
+- Calendar s.10: "All graduate awards are tenable only for the Regular Session (September to April)."
+- Assistantships: no GA/TA information found for Rural Development on brandonu.ca (calendar mentions "Graduate Teaching Assistantship Applications" only for the Master of Music) -> UNCONFIRMED.
+
+### C4. Health insurance and opt-outs
+- MISHP https://www.brandonu.ca/future-students/apply/international/international-health-insurance/ : "Plan Cost $1,200 for one year (non-refundable coverage from September 1, 2025 to August 31, 2026)"; opt-out only "If you currently have provincial health coverage"; "Both of these plans (Manitoba International Student Health through Blue Cross and BUSU Supplemental Health & Dental) have an annual cost and are mandatory." (Fee-table footnote "approximately $1,104/year" conflicts; page amount 1,200 matches the table column.)
+- Manitoba Health (gov.mb.ca) https://www.gov.mb.ca/health/mhsip/movingtomanitoba.html "Study Permit Holders": "Effective September 1, 2018, individuals with a Study Permit issued by Immigration, Refugees and Citizenship Canada are no longer eligible for Manitoba Health coverage." -> MISHP opt-out NOT possible for a study-permit holder. (No saving.)
+- BUSU H&D ($350/yr) https://busu.ca/hd-international-students : "If you are registered as a Graduate during the early enrollment period, with one course ... you are automatically opted-into the BUSU Health & Dental Plan."; "ONE TIME ANNUAL PAYMENT"; opt-out via StudentVIP by "SEPTEMBER 30, 2026" with "proof of an alternative health insurance plan". Whether MISHP counts as alternative coverage: UNCONFIRMED (the page stresses "MISHP - DOES NOT COVER many non-urgent medical care needs, such as prescription medications"; and "International students are not eligible for Pharmacare"). Realistic saving: 0 unless other private coverage exists.
+- U-Pass $50/yr: opt-out rules not found (busu.ca/upass 404). Small.
+
+### C5. Payment
+- https://www.brandonu.ca/finance/student-resources/tuition-info/ : "Payment Due Dates (2026-27 Regular Session) September 9, 2026 — Fall and Fall/Winter term tuition, residence and all student fees due"; "January 5, 2027 — Winter term tuition"; "$30.00 late payment fee"; "Credit cards are not accepted for payment of tuition and residence fees."; HigherEdPoints (Aeroplan miles) accepted. No monthly instalment plan found.
+
+### C6. Living costs (Brandon)
+- No official Brandon cost-of-living estimate found (OIA prospective page https://www.brandonu.ca/international-activities/prospective-international-students/ only says "the City of Brandon enjoys a low cost-of-living"). Costs Estimator https://www.brandonu.ca/future-students/tuition/calculator/ is "only an estimate of your Undergraduate (domestic) University costs".
+- Residence 2026-27 https://www.brandonu.ca/residence/residence-costs/rates/room-board-rates/ ("estimates ... subject to Board of Governor's approval"; "Term is defined as at least 4 months"): "McMaster Double" "$2,300" per term; "McMaster Economy Single" "$2,875"; meal plans mandatory "Value Plan" "$2,425" per term; misc RSA 60 + Facility 85 + Maintenance 15 per term. -> cheapest room+board ~4,885/term (~1,220/month incl. food); economy single ~5,460/term (~1,365/month).
+
+### C7. Manitoba provincial programs
+- Tuition Fee Income Tax Rebate: Manitoba Finance Taxation Bulletin No. 117 (April 2017) https://www.gov.mb.ca/finance/taxation/pubs/bulletins/2017budget.pdf : "The Rebate is being phased out commencing in 2017."; "The Rebate is being fully eliminated for the 2018 tax year at which time no Rebate credits will be claimable. Any unclaimed credits that existing graduates may have accumulated will lapse."; Advance "eliminated effective for tuition and ancillary fees paid in relation to a school term that begins after April 2017." -> CANCELLED. No current Manitoba tuition-refund program for graduates found.
+
+## D. Ranked savings summary (realistic for a ~70% / ~2.7 GPA international entrant)
+- UNB: (1) NB Medicare -> opt out of guard.me 200/term after Fall: 400-600; (2) need-based Wu bursary (variable) + Vanicek Geodesy $1,000 (apply/ask GGE); (3) GSTA/GSRA if hired: up to 520 h x 29.92 = ~15,560/yr (not guaranteed for MEng); (4) finish in 3 terms not 4: ~1,350; entrance/differential awards: NO (research-based or UNB-alumni only).
+- Guelph: (1) finish in 3 semesters: ~9,932 avoided; (2) GTA if hired: ~6,925/semester (F25 rate); (3) CDE awards $2,000 each (McLean apply by Aug 15; Grothier automatic, high average) and Ariani $5,000 (apply, highest average) — low odds; IMTS-C $6,000: NO (Guelph undergrads only); UHIP/medical/bus: no opt-out; dental 120 opt-out only with other cover.
+- Brandon: (1) compress 30 cr into fewer regular sessions: ~1,773 fees + living (feasibility UNCONFIRMED); (2) cheap residence/low-cost city; (3) Henry F. Wiebe award up to $3,000 (eligibility for internationals UNCLEAR); MISHP opt-out: NO (Manitoba Health excludes study-permit holders); BUSU H&D 350 opt-out only with alternative plan; scholarships need GPA 3.00+; bursaries citizens/PR only.
+- Provincial: NB tuition rebate repealed 1 Jan 2016; MB Tuition Fee Income Tax Rebate eliminated for 2018+; Ontario has none (tuition credits discontinued Sept 2017). NB has a non-refundable provincial tuition tax credit again (2019, c.13).
