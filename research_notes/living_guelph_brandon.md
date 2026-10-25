@@ -94,3 +94,58 @@ Agent notes, started 25 Oct 2026. Sources: uoguelph.ca, brandonu.ca, official go
 - Manitoba file: .../2025/rmr-manitoba-2025-en.xlsx , Table 1.1.2 "Private Apartment Average Rents ($), by Bedroom Type - Manitoba 10,000+", row "Brandon CA" Oct-24 / Oct-25: Studio 622 (b) / 652 (b); 1 Bedroom 813 / 810; 2 Bedroom 1,068 / 1,086; 3 Bedroom+ 1,373 / 1,404; Total 1,035 / 1,057. Row+apartment Table 3.1.2 Brandon CA Oct-25: 2 Bedroom 1,096. Vacancy Table 1.1.1 Brandon CA Oct-25: 1 Bedroom 3.0 (b), 2 Bedroom 1.6 (b), Total 1.9 (b).
 - CMHC rents are whole-unit rents; utilities inclusion varies (not separated in these tables). Quality codes a=Excellent, b=Very Good, c=Good, d=Poor.
 
+## B. Brandon University
+
+### Blocked / not found (Brandon)
+- https://www.brandon.ca/transit/fares : HTTP 404 (curl); Chromium renders a 404 page. Used City fee by-law PDF instead.
+- No graduate-specific, apartment-style or kitchen residence found on brandonu.ca; no university off-campus housing listing/advice page found (site search returned only residence pages). Family housing: only a 2016 news item (news.brandonu.ca, not opened; single applicant, not needed).
+- Winter Break Residence Fee amount: NOT published on pages read (policy says it "will be published each academic year") -> UNCONFIRMED.
+- busu.ca/upass: HTTP 404 (earlier notes) -> whether U-Pass covers May-Aug UNCONFIRMED.
+
+### B1. Residence (https://www.brandonu.ca/residence/residence-costs/rates/room-board-rates/ , "2026-2027 Rates")
+- "The rates presented are estimates of room and board only and are subject to Board of Governor's approval." "Meal plans are mandatory for all students in residence." "Term is defined as at least 4 months, approximately 17 weeks. There are 2 Terms in an Academic Year." Rates index https://www.brandonu.ca/residence/residence-costs/rates/ : "2026-2027 Academic Year September 2026 to April 2027".
+| Room (per term) | Price |
+|---|---|
+| McMaster Double | $2,300 |
+| McMaster Economy Single | $2,875 |
+| McMaster Standard Plus Single (private washroom) | $3,500 |
+| McMaster Queen Single | $3,775 |
+| Flora Cowan Economy Single | $2,450 |
+| Flora Cowan Standard Single | $2,700 |
+| Darrach Hall Standard Single | $2,700 |
+- Meal plans per term: "Value Plan $2,425"; "Basic Plan $2,800"; "Premium Plan $3,175". Misc per term: "RSA Fee $60.00"; "Facility Fee $85.00"; "Maintenance Fee $15.00" (= $160/term). "non-refundable $65.00 application fee". Laundry "$2.50 per wash" "$2.50 per dry".
+- Included ("Amenities and Perks"): "Furnished Room", "Potable Water", "Electricity", "Heat", "Wi-Fi"; parking "(Available to Purchase)".
+- Halls https://www.brandonu.ca/residence/residence-halls/ : Darrach "up to 90 residents" (men inclusive), Flora Cowan "up to 110" (women inclusive), McMaster "up to 270" (all gender); "All rooms have WiFi internet." No kitchens mentioned; no graduate-only building.
+- Apply https://www.brandonu.ca/residence/apply/ : apply "24 hours after you have been admitted AND you have Claimed your ID"; "Step 5: Pay your $350 Room Deposit Online"; deposit "directly applied to your balance owing to Room and Board."
+- Important dates https://www.brandonu.ca/residence/important-dates/ (2026 cycle, "estimates and are subject to change"): "Incoming Student Applications Open (Academic Year and Fall Only): May 11, 2026"; offers in two-week rounds, e.g. "Applications May 11- May 13: Receive Offer by May 15, Deposit Deadline May 21."; "Deposit Refund Deadline is June 20th, 2026"; "Fall Term housing fees due to avoid penalty — September 8, 2026"; "Last day to withdraw from Winter Term housing — December 1, 2026".
+- FAQ https://www.brandonu.ca/residence/home/faq/ : "Student who apply for residence early in the summer are successful in securing a space in residence." "In the event we sell out of spaces, a waitlist is started." No guarantee for graduate or international students found. Breaking contract: "$500 penalty and charged until the end of the term". "Refunds for unused [meal plan] money are not available."
+- Winter break policy https://www.brandonu.ca/vp-finance/files/Winter-Break-Residence-Policy-February-2026.pdf : buildings "remain open throughout the Winter Break for residents who have registered and paid the associated fee"; "A non-refundable Winter Break Residence Fee will be published each academic year. This fee covers room access only"; "Residents will be responsible for their own food provision."
+- Spring/Summer https://www.brandonu.ca/residence/residence-costs/rates/ss-room-and-board/ : "From May 1st to August 23rd, students living in Residence stay in McMaster Hall and Flora Cowan Hall." Eligibility: "students must be saying on campus for 4 weeks+ AND actively studying throughout the stay." Per day: "McMaster Double $18.96"; "McMaster Economy Single $23.75"; "McMaster Standard Plus Single $28.96"; "Flora Cowan Economy Single $20.21"; "Flora Cowan Standard Single $22.29"; meals per day "Value Plan $20.21", "Basic Plan $23.33", "Premium Plan $26.46"; misc per term RSA 60 / Facility 85 / Maintenance 15. "Room costs listed below are approximate." (2026 rates.)
+
+### B2. University cost-of-living estimates
+- International Admissions Guide https://www.brandonu.ca/future-students/apply/international/guide/ "Education Costs": "approximately $35,000 CAD to cover your first year of study (September to April) – this amount includes tuition, on-campus residence with meal plan, books and health insurance. Travel costs are not included". Based on "estimated undergraduate tuition". No monthly/yearly line-item living estimate for graduate or international students found (OIA page: "the City of Brandon enjoys a low cost-of-living").
+
+### B3. Off-campus: CMHC only (see CMHC section): Brandon CA Oct-25 apartment average rent studio 652, 1-bed 810, 2-bed 1,086, 3-bed+ 1,404.
+
+### B4. Transport, health
+- City of Brandon 2025 Annual Schedule of Fees (By-law 7284) https://www.brandon.ca/media/ilgfsfe3/2025-fee-schedule.pdf , TRANSIT (2024 / 2025): "POST SECONDARY STUDENT 30 Day Pass 55.00 62.00"; ADULT "30 Day Pass 86.00 98.00"; "Cash Fare 1.75 2.00".
+- U-Pass: $50.00 per year in the BU fee table (earlier notes, 2025-26 Graduate International Tuition Table) -> academic-year transit included in fees.
+- Health: MISHP "$1,200 for one year" + BUSU Health & Dental $350/yr, both mandatory and already in program fees (earlier notes; https://www.brandonu.ca/future-students/apply/international/international-health-insurance/ and https://busu.ca/hd-international-students). Guide: "This plan has an annual cost and is mandatory." -> not added to living budget.
+
+## C. 12-month living budgets (Sept 2027 - Aug 2028), excluding tuition, compulsory fees, UHIP/MISHP (already in program-cost totals). All rates 2026-27 (Fall 2027 rates not yet published; expect increases of a few %).
+Non-housing lines for both cities use Guelph OGPS per-year figures (only official university line-item estimate available; Brandon has none -> used as proxy, likely high for Brandon): phone 622, personal care 780, clothing 1,560, entertainment 2,100.
+
+### Guelph (a) cheapest realistic on-campus (self-catering single room; guaranteed for new international master's if apply + $750 deposit by 1 June 2027)
+- West Village / Wellington Woods / University Houses single, Fall+Winter 10,992 + IHC 28.84 x 2 = 57.68 + holiday stayover 500 + Summer 2026 single (WV 3-bed townhouse or University House) 2,500 = 14,049.68 (utilities, internet, laundry, furniture included; Wellington Woods unfurnished).
+- + groceries 3,070 (OGPS/year) + other 5,062 = 22,181.68. (+ books 1,300 = 23,481.68.) Transit 0 (UPASS in fees).
+- Variant: West Village Double Room Apartment 10,592 -> saves 400 -> 21,781.68. Traditional triple 8,387 + mandatory Minimum meal plan 5,750 = 14,137 for 8 months is dearer than self-catering.
+### Guelph (b) shared off-campus
+- Room in 3-bedroom unit $929 x 12 = 11,148 (U of G OCL average); utilities 2,490 (OGPS); groceries 3,070; laundry 192; furniture 500 (low end of OGPS 500-1,000); other 5,062 -> 22,462 (+ books 1,300 = 23,762). Last-month deposit = prepaid rent, not extra. CMHC cross-check: 2-bed average 1,802 / 2 = 901/room; vacant-unit 2-bed 2,129 / 2 = 1,065/room.
+### Brandon (a) cheapest on-campus (meal plan mandatory, so food included)
+- Flora Cowan Economy Single: (2,450 + Value 2,425 + misc 160) x 2 terms = 10,070 + application 65 = 10,135. Spring/Summer May 1-Aug 23 = 115 days x (20.21 + 20.21) = 4,648.30 + misc 160 = 4,808.30 (only if "actively studying" in summer). Room+board subtotal 14,943.30. + laundry ~260 (52 x 5.00) + other 5,062 = 20,265.30. Winter-break fee UNCONFIRMED (+ ~10 days self-catered food). Aug 24-31 gap not covered.
+- McMaster Double variant: (2,300 + 2,425 + 160) x 2 + 65 = 9,835; summer 115 x (18.96 + 20.21) = 4,504.55 + 160 -> 14,499.55; total 19,821.55.
+### Brandon (b) shared off-campus
+- Half of CMHC 2-bed average 1,086 = 543 x 12 = 6,516; utilities 2,490 (Guelph proxy); groceries 3,070 (Guelph proxy); laundry 192; summer transit 4 x 62 = 248 (2025 post-secondary 30-day pass; U-Pass covers academic year); furniture 500; other 5,062 -> 18,078. (Room in 3-bed: 1,404 / 3 = 468 x 12 = 5,616 -> 17,178.)
+
+### Verdict
+- Cheapest realistic: Brandon shared off-campus ~18,100/yr; Brandon on-campus ~19,800-20,300 (all meals included, but no kitchens and summer stay only if studying). Guelph: on-campus self-catering single ~22,200 and off-campus shared ~22,500 are nearly equal; on-campus wins on certainty (guarantee, furnished, utilities/internet included, no lease).
