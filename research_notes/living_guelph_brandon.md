@@ -86,3 +86,11 @@ Agent notes, started 25 Oct 2026. Sources: uoguelph.ca, brandonu.ca, official go
 - "Average Rent Prices (per month)": "One bedroom studio/apartment: $1,650"; "Two bedroom unit: $1019 per room"; "Three bedroom unit: $929 per room"; "Four bedroom unit: $945 per room"; "Five bedroom unit: $951 per room"; "Six bedroom unit: $895 per room"; "Seven bedroom+ units: $975 per room". Whether utilities included: not stated (page: prices vary by "whether or not utilities like heat and hydro are included").
 - Also: "Did someone say damage deposit.. hey, that's illegal under the Residential Tenancies Act!" (Ontario: last-month-rent deposit only).
 
+## CMHC Rental Market Survey, October 2025 (official, cmhc-schl.gc.ca; fetched OK)
+- Landing page https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/data-tables/rental-market/rental-market-report-data-tables : "Find the results from CMHC's 2025 Rental Market Survey (presented in Microsoft Excel tables)".
+- Guelph file: https://assets.cmhc-schl.gc.ca/sites/cmhc/professional/housing-markets-data-and-research/housing-data-tables/rental-market/rental-market-report-data-tables/2025/rmr-guelph-2025-en.xlsx , Table 1.1.2 "Private Apartment Average Rents ($), by Zone and Bedroom Type - Guelph CMA", row "Guelph CMA" Oct-24 / Oct-25: Studio 1,271 (c) / 1,332 (c); 1 Bedroom 1,598 / 1,627; 2 Bedroom 1,740 / 1,802; 3 Bedroom+ 1,935 / 2,091; Total 1,688 / 1,733.
+  - Table 1.1.9 (Oct 2025, vacant vs occupied): 1 Bedroom vacant 1,857 vs occupied 1,619; 2 Bedroom vacant 2,129 vs occupied 1,792 (asking rents for a newcomer are higher than the average).
+  - Table 1.1.1 vacancy Oct-25: 1 Bedroom 3.4 (c); 2 Bedroom 2.7 (b); Total 3.1 (b).
+- Manitoba file: .../2025/rmr-manitoba-2025-en.xlsx , Table 1.1.2 "Private Apartment Average Rents ($), by Bedroom Type - Manitoba 10,000+", row "Brandon CA" Oct-24 / Oct-25: Studio 622 (b) / 652 (b); 1 Bedroom 813 / 810; 2 Bedroom 1,068 / 1,086; 3 Bedroom+ 1,373 / 1,404; Total 1,035 / 1,057. Row+apartment Table 3.1.2 Brandon CA Oct-25: 2 Bedroom 1,096. Vacancy Table 1.1.1 Brandon CA Oct-25: 1 Bedroom 3.0 (b), 2 Bedroom 1.6 (b), Total 1.9 (b).
+- CMHC rents are whole-unit rents; utilities inclusion varies (not separated in these tables). Quality codes a=Excellent, b=Very Good, c=Good, d=Poor.
+
